@@ -1,8 +1,26 @@
 aid: mokn
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mokn.png
 name: MokN
-description: 'MokN is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'MokN is a cybersecurity company that helps organizations detect external
+  threats before attackers can weaponize them. Founded by SOC practitioners after a
+  major cyber crisis, MokN builds the detection layer around two products: Baits, defensive
+  deception pages that lure attackers into revealing stolen credentials and validate
+  compromise in real time, and Lantern, an external attack surface management tool that
+  maps and remediates perimeter exposures. The platform reports processing over one
+  billion login attempts and protecting hundreds of thousands of users across organizations.
+  MokN publishes no public API, SDK, or developer documentation as of this pass; this
+  profile captures the company''s public web presence and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/mokn/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise
+- Cybersecurity
+- Threat Detection
+- Deception Technology
+- Attack Surface Management
+- Credential Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mokn-domain-security.yml
 - type: Website
   url: https://mokn.io
+- type: TermsOfService
+  url: https://mokn.io/terms-of-service
+- type: Support
+  url: https://mokn.io/contact
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
